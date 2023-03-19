@@ -394,8 +394,7 @@ signUpForm.addEventListener('submit', e => {
 ///////////////////////////////////////
 // Handling loading state
 
-// const LOADING_TIMEOUT = 5000; // 5 seconds
-const LOADING_TIMEOUT = 500; // testing
+const LOADING_TIMEOUT = 5000; // 5 seconds
 
 window.addEventListener('load', () => {
   const content = document.querySelector('.content');
@@ -410,9 +409,7 @@ window.addEventListener('load', () => {
 // Handling idle state
 
 const IDLE_EVENT_LIST = ['click', 'scroll', 'selectionchange'];
-// const IDLE_TIMEOUT = 60 * 1000; // 1 minute
-const IDLE_TIMEOUT = 60 * 10000; // 10 minutes
-// const IDLE_TIMEOUT = 2000; // testing
+const IDLE_TIMEOUT = 60 * 1000; // 1 minute
 
 const resetTimer = () => {
   clearTimeout(timer);
