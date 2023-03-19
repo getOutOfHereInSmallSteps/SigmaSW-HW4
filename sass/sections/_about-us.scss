@@ -38,9 +38,6 @@
   &__img-container {
     border-radius: 140px 0;
     border: 2px solid $color-decore-brown;
-    // flex-shrink: 1;
-    // flex-grow: 0;
-    // flex-basis: 40%;
     flex-shrink: 1;
     height: 72rem;
 
@@ -70,8 +67,9 @@
     &-subheading {
       line-height: 1;
       font-family: 'Open Sans', sans-serif;
-      background-image: url('../../imgs/wooden-texture.png');
+      background-image: url('../imgs/wooden-texture.png');
       background-clip: text;
+      -webkit-background-clip: text;
       color: transparent;
       font-size: 26.8rem;
       font-weight: 700;

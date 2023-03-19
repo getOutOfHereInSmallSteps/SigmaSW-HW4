@@ -23,7 +23,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // gap: 6.4rem;
   flex-wrap: wrap;
   &__blog {
     margin-bottom: 4.2rem;
@@ -43,7 +42,6 @@
 
       .blogs__blog-btn {
         transform: translateY(2rem);
-        // align-self: flex-end;
         bottom: 0;
       }
     }
@@ -68,10 +66,7 @@
       font-weight: 600;
       font-size: 3rem;
       transition: all 0.2s;
-      // height: 10rem;
-      // word-break: unset;
       vertical-align: sub;
-      // text-align: center;
     }
 
     &-paragraph {
@@ -89,8 +84,6 @@
       transform: translateY(-3rem);
       padding: 1.6rem 3.6rem;
       border-radius: 25px 0px;
-      // width: 10rem;
-      // margin-top: auto;
     }
   }
 }

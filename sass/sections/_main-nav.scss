@@ -2,7 +2,6 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 100;
-  // padding: 0 5rem;
 }
 
 .main-nav {
@@ -11,9 +10,6 @@
   align-items: center;
   padding: 2rem;
   z-index: 100;
-  // width: 100vw;
-  // max-width: 100vw;
-  // max-width: 72%;
   margin: 0 auto;
   max-width: 140rem;
   &__links {
@@ -42,12 +38,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  // width: 100%;
-  // padding: 0 26rem;
-  // padding-left: 26rem;
-  // padding-right: 26rem;
-  // background-color: rgba(255, 255, 255, 0.95);
-  // max-width: 100vw;
 }
 
 .menu-burger {
