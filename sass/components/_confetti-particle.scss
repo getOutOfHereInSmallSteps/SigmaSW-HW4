@@ -1,0 +1,17 @@
+.fall-square {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -40px;
+  animation: squareFall ease-out forwards;
+}
+
+@keyframes squareFall {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+    top: calc(100vh + 30px);
+  }
+}

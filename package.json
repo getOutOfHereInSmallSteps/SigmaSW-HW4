@@ -1,0 +1,15 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Alex Bihas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.59.2"
+  }
+}

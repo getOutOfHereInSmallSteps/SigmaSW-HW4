@@ -1,0 +1,93 @@
+.services {
+  margin-bottom: 48rem;
+  position: relative;
+  &-subheading {
+    @include subheading(1.6rem);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  &-heading {
+    @include heading(2.4rem);
+    font-weight: 500;
+    font-size: 4.8rem;
+  }
+  &__nav {
+    max-width: 100rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    &-btn {
+      @include btn();
+      border-radius: 20px;
+      padding: 0.5rem 0;
+      border: 0.5rem solid $color-main-green;
+      flex-grow: 1;
+      max-width: 20rem;
+      text-align: center;
+      min-width: 19rem;
+      margin-bottom: 2rem;
+      &--selected {
+        background: $color-white;
+        color: $color-main-green;
+      }
+    }
+  }
+
+  &-decore {
+    right: 0.5%;
+  }
+}
+
+.cards {
+  padding: 0 10rem;
+  max-width: 160rem;
+  // transform: translateX(12rem);
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  box-shadow: (0px 8px 20px rgba(0, 0, 0, 0.14));
+  padding: 2.5rem 3rem;
+  border-radius: 60px 0px;
+  max-width: 40rem;
+  margin-bottom: 8.6rem;
+  animation: fade-in 0.6s;
+
+  &--1 {
+    &__desc {
+      &-heading {
+        @include heading(1rem);
+        font-size: 2.4rem;
+      }
+      &-paragraph {
+        @include paragraph();
+      }
+    }
+  }
+
+  &--2 {
+    background-color: $color-main-brown;
+    &__desc {
+      &-heading {
+        @include heading(1rem);
+        font-size: 2.4rem;
+        color: $color-white;
+      }
+      &-paragraph {
+        @include paragraph(0);
+        color: $color-white;
+      }
+    }
+  }
+
+  img {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decbase</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- OPEN SANS: 300, 400, 500, 600, 700, 800 -->
+    <!-- POPPINS: 300, 400, 500, 600, 700, 800 -->
+    <!-- RALEWAY:  300, 400, 500, 600, 700-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./scripts/script.js"></script>
+  </head>
+  <body>
+    <div class="loader">
+      <p class="loader-text">Loading...</p>
+      <div class="loader__container">
+        <div class="square square--1"></div>
+        <div class="square square--2"></div>
+        <div class="square square--3"></div>
+        <div class="square square--4"></div>
+        <div class="square square--5"></div>
+      </div>
+    </div>
+
+    <div class="content hidden">
+      <header class="header">
+        <div class="main-nav__container">
+          <nav class="main-nav">
+            <div class="main-nav__logo">
+              <img src="./imgs/decbase_logo.png" alt="Decbase Logo" />
+            </div>
+            <div class="main-nav__links">
+              <a href="#section--hero" class="link">Home</a>
+              <a href="#section--services" class="link">Services</a>
+              <a href="#section--about" class="link">About</a>
+              <a href="#section--projects" class="link">Projects</a>
+              <a href="#section--review" class="link">Review</a>
+              <a href="#section--blog" class="link">Blog</a>
+              <a href="#footer" class="link">Contact</a>
+              <a href="#section--sign-up" class="link link--sign-up">Sign up</a>
+            </div>
+            <div class="menu-burger">
+              <img src="./svg/burger.svg" aria-hidden="true" />
+            </div>
+            <div class="main-nav__progress-bar hidden"></div>
+          </nav>
+        </div>
+
+        <section class="hero container" id="section--hero">
+          <div class="hero__desc">
+            <h3 class="hero__desc-subheading">Modern Interior</h3>
+            <h1 class="hero__desc-heading">Create your interior design.</h1>
+            <p class="hero__desc-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+            <a href="#" class="hero__desc-btn">Contact</a>
+          </div>
+          <div class="hero__img-container">
+            <img
+              src="./imgs/hero_image.png"
+              alt="Bussiness Room Interior"
+              class="hero__img-container-image"
+            />
+          </div>
+        </section>
+        <img
+          src="./svg/abstract-decore-1.svg"
+          class="decore header-decore"
+          aria-hidden="true"
+        />
+      </header>
+      <main>
+        <section class="services" id="section--services">
+          <div class="container">
+            <h3 class="services-subheading">What we do</h3>
+            <h2 class="services-heading">Our service</h2>
+            <nav class="services__nav">
+              <a
+                href="#"
+                class="services__nav-btn services__nav-btn--selected"
+                data-type="topSelection"
+                >All</a
+              >
+              <a href="#" class="services__nav-btn" data-type="design"
+                >Interior design</a
+              >
+              <a href="#" class="services__nav-btn" data-type="architecture"
+                >Architecture</a
+              >
+              <a href="#" class="services__nav-btn" data-type="planning"
+                >Planning</a
+              >
+            </nav>
+          </div>
+
+          <div class="cards container">
+            <div class="card card--1">
+              <img src="./svg/design.svg" aria-hidden="true" />
+              <div class="card--1__desc">
+                <h2 class="card--1__desc-heading">Elegant Design</h2>
+                <p class="card--1__desc-paragraph">
+                  Our designers specialize in creating elegant and sophisticated
+                  interiors that are tailored to your unique style and needs.
+                </p>
+              </div>
+            </div>
+            <div class="card card--2">
+              <img src="./svg/architecture.svg" aria-hidden="true" />
+              <div class="card--2__desc">
+                <h2 class="card--2__desc-heading">Contemporary Architecture</h2>
+                <p class="card--2__desc-paragraph">
+                  Our architects specialize in designing contemporary buildings
+                  that blend form and function to create stunning and unique
+                  structures.
+                </p>
+              </div>
+            </div>
+
+            <div class="card card--1">
+              <img src="./svg/planning.svg" aria-hidden="true" />
+              <div class="card--1__desc">
+                <h2 class="card--1__desc-heading">Urban Planning</h2>
+                <p class="card--1__desc-paragraph">
+                  Our team of urban planners understands the unique challenges
+                  and opportunities presented by cities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./svg/abstract-decore-2.svg"
+            aria-hidden="true"
+            class="decore services-decore"
+          />
+        </section>
+
+        <section class="about container" id="section--about">
+          <article class="mextreo">
+            <div class="mextreo__img-container">
+              <img
+                src="./imgs/about-image.png"
+                alt="Living Room Interior"
+                class="mextreo__img-container-image"
+              />
+            </div>
+            <div class="mextreo__desc">
+              <h3 class="mextreo__desc-subheading">About us</h3>
+              <h2 class="mextreo__desc-heading">
+                Interiors the will of an epoch mextreo
+              </h2>
+              <p class="mextreo__desc-paragraph">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form injected
+                humour, or randomised words which don't look even slightly
+                believable.If you are going to use a passage of Lorem Ipsum,
+                sure there isn't anything embarrassing hidden the middleof text.
+                All the Lorem Ipsum generators on the Internettend to repeat
+                predefined chunks as necessary,making this the first true
+                generator on the Internet.
+              </p>
+              <a href="#" class="mextreo__desc-btn">Learn more</a>
+            </div>
+            <img
+              src="./svg/abstract-decore-3.svg"
+              aria-hidden="true"
+              class="decore mextreo-decore"
+            />
+          </article>
+          <article class="success">
+            <div class="success__desc">
+              <h3 class="success__desc-subheading">20</h3>
+              <h2 class="success__desc-heading">
+                Years of successful working the market
+              </h2>
+              <a href="#" class="success__desc-btn">Read more</a>
+            </div>
+            <div class="success__img-container">
+              <img
+                src="./imgs/success-image.png"
+                alt="A Bookshelf Design"
+                class="success__img-container-image"
+              />
+            </div>
+            <img
+              src="./svg/abstract-decore-4.svg"
+              aria-hidden="true"
+              class="decore success-decore"
+            />
+          </article>
+        </section>
+
+        <section class="works" id="section--projects">
+          <div class="container">
+            <h2 class="works-heading">
+              3000+ Completed Work Which WE have Successfully Done
+            </h2>
+            <div class="completed-works">
+              <div class="completed-works__card completed-works__card--1">
+                <h2 class="completed-works__card-heading">980</h2>
+                <p class="completed-works__card-paragraph">Project</p>
+              </div>
+              <div class="completed-works__card completed-works__card--2">
+                <h2 class="completed-works__card-heading">520</h2>
+                <p class="completed-works__card-paragraph">Happy Client</p>
+              </div>
+              <div class="completed-works__card completed-works__card--3">
+                <h2 class="completed-works__card-heading">330</h2>
+                <p class="completed-works__card-paragraph">Winners</p>
+              </div>
+              <div class="completed-works__card completed-works__card--4">
+                <h2 class="completed-works__card-heading">120</h2>
+                <p class="completed-works__card-paragraph">Recoment</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./svg/abstract-decore-5.svg"
+            aria-hidden="true"
+            class="decore works-decore"
+          />
+        </section>
+
+        <section class="testimonials container" id="section--review">
+          <h3 class="testimonials-subheading">Testimonials</h3>
+          <h2 class="testimonials-heading">Client says about us</h2>
+
+          <div class="carousel">
+            <div class="carousel__card-container">
+              <div class="carousel__card">
+                <h2 class="carousel__card-heading">
+                  Louis Saville<span class="carousel__card-heading-position"
+                    >/CEO at Google inc</span
+                  >
+                </h2>
+                <p class="carousel__card-paragraph">
+                  I recently used Decbase for my business's website and was
+                  blown away by the quality of their work. I would highly
+                  recommend them to anyone.
+                </p>
+                <img
+                  src="./imgs/client-1.png"
+                  alt="Louis Saville"
+                  class="carousel__card-client-avatar"
+                />
+                <span class="carousel__card-quote">&rdquo;</span>
+              </div>
+            </div>
+
+            <div class="carousel__card-container">
+              <div class="carousel__card">
+                <h2 class="carousel__card-heading">
+                  Rekha Varadwaz<span class="carousel__card-heading-position"
+                    >/Manager at Nike inc</span
+                  >
+                </h2>
+                <p class="carousel__card-paragraph">
+                  Working with Decbase Design Company was a great experience. I
+                  would definitely work with them again in the future.
+                </p>
+                <img
+                  src="./imgs/client-2.png"
+                  alt="Rekha Varadwaz"
+                  class="carousel__card-client-avatar"
+                />
+                <span class="carousel__card-quote">&rdquo;</span>
+              </div>
+            </div>
+
+            <div class="carousel__card-container">
+              <div class="carousel__card">
+                <h2 class="carousel__card-heading">
+                  Winston Smith<span class="carousel__card-heading-position"
+                    >/Ministry of Truth</span
+                  >
+                </h2>
+                <p class="carousel__card-paragraph">
+                  Working with Decbase design was a breeze. Their team is very
+                  professional and provided us with excellent design solutions.
+                </p>
+                <img
+                  src="./imgs/client-3.jpeg"
+                  alt="Winston Smith"
+                  class="carousel__card-client-avatar"
+                />
+                <span class="carousel__card-quote">&rdquo;</span>
+              </div>
+            </div>
+            <div class="carousel__card-container">
+              <div class="carousel__card">
+                <h2 class="carousel__card-heading">
+                  Jane Doe<span class="carousel__card-heading-position"
+                    >/Marketing Manager at SigmaSW</span
+                  >
+                </h2>
+                <p class="carousel__card-paragraph">
+                  Decbase design delivered amazing and high quality results on a
+                  very tight deadline. They are very responsive and easy to work
+                  with.
+                </p>
+                <img
+                  src="./imgs/client-4.jpeg"
+                  alt="Jane Doe"
+                  class="carousel__card-client-avatar"
+                />
+                <span class="carousel__card-quote">&rdquo;</span>
+              </div>
+            </div>
+            <div class="carousel__card-container">
+              <div class="carousel__card">
+                <h2 class="carousel__card-heading">
+                  Sarah Johnson<span class="carousel__card-heading-position"
+                    >/Entrepreneur</span
+                  >
+                </h2>
+                <p class="carousel__card-paragraph">
+                  I am very impressed with the creativity and attention to
+                  detail of Decbase design. They were able to bring my vision to
+                  life and meet my expectations.
+                </p>
+                <img
+                  src="./imgs/client-6.jpeg"
+                  alt="Sarah Johnson"
+                  class="carousel__card-client-avatar"
+                />
+                <span class="carousel__card-quote">&rdquo;</span>
+              </div>
+            </div>
+            <div class="carousel__card-container">
+              <div class="carousel__card">
+                <h2 class="carousel__card-heading">
+                  Michael Brown<span class="carousel__card-heading-position"
+                    >/Creative Director</span
+                  >
+                </h2>
+                <p class="carousel__card-paragraph">
+                  Decbase design is an excellent choice for anyone looking for
+                  design services. Their team is knowledgeable, responsive, and
+                  delivers exceptional work.
+                </p>
+                <img
+                  src="./imgs/client-5.jpeg"
+                  alt="Michael Brown"
+                  class="carousel__card-client-avatar"
+                />
+                <span class="carousel__card-quote">&rdquo;</span>
+              </div>
+            </div>
+
+            <div class="carousel__btns">
+              <button class="carousel-btn carousel-btn--left">&lt;</button>
+              <button class="carousel-btn carousel-btn--right">&gt;</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="latest-news" id="section--blog">
+          <div class="container">
+            <h3 class="latest-news-subheading">Letest news</h3>
+            <h2 class="latest-news-heading">From our blog</h2>
+
+            <div class="blogs hidden">
+              <div class="blogs__blog">
+                <div class="blogs__blog__img-container">
+                  <img
+                    src="./imgs/blog-1.png"
+                    alt="Shelf Interior"
+                    class="blogs__blog__img-container-image"
+                  />
+                </div>
+                <h2 class="blogs__blog-heading">2020 interior design trends</h2>
+                <p class="blogs__blog-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="blogs__blog-btn">continue reading...</a>
+              </div>
+
+              <div class="blogs__blog">
+                <div class="blogs__blog__img-container">
+                  <img
+                    src="./imgs/blog-2.png"
+                    alt="Bedroom Interior"
+                    class="blogs__blog__img-container-image"
+                  />
+                </div>
+                <h2 class="blogs__blog-heading">
+                  28 notable product at ARC interior design
+                </h2>
+                <p class="blogs__blog-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="blogs__blog-btn">continue reading...</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sign-up" id="section--sign-up">
+          <form class="form">
+            <h2 class="form-heading">Don't forget to sign up</h2>
+            <hr class="form-separator" />
+            <h3 class="form-subheading">
+              Find out early about all upcoming promotions and new product
+              releases with our newsletter.
+            </h3>
+            <div class="form__grid">
+              <div class="form__input-container">
+                <input
+                  type="text"
+                  class="form-input form-input--first-name"
+                  placeholder="Enter your name..."
+                />
+                <p class="form-input-error hidden">Name should be valid</p>
+              </div>
+              <div class="form__input-container">
+                <input
+                  type="text"
+                  class="form-input form-input--last-name"
+                  placeholder="Enter your surname..."
+                />
+                <p class="form-input-error hidden">Surname should be valid</p>
+              </div>
+              <div class="form__input-container form__input-container--email">
+                <input
+                  type="email"
+                  class="form-input form-input--email"
+                  placeholder="Enter your e-mail..."
+                />
+                <p class="form-input-error hidden">Email should be valid</p>
+              </div>
+            </div>
+            <button class="form-submit-btn" type="submit">Subscribe</button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer-links">
+            <div class="col__logo">
+              <img src="./imgs/decbase_logo.png" alt="Decbase Logo" />
+              <p class="col__logo-paragraph">
+                But i must explain to you all this mistaken idea of dencouncing
+                pleasure.
+              </p>
+            </div>
+            <div class="col__links">
+              <h2 class="col__links-heading">Quick links</h2>
+              <a href="#" class="col__links-link">About our company</a>
+              <a href="#" class="col__links-link">Services WE provide</a>
+              <a href="#" class="col__links-link">Career & opportunity</a>
+              <a href="#" class="col__links-link">Privacy & policy</a>
+              <a href="#" class="col__links-link">Contact US</a>
+            </div>
+            <div class="col__links">
+              <h2 class="col__links-heading">Company</h2>
+              <a href="#" class="col__links-link">About company</a>
+              <a href="#" class="col__links-link">Our testimonials</a>
+              <a href="#" class="col__links-link">Latest news</a>
+              <a href="#" class="col__links-link">Our mission</a>
+              <a href="#" class="col__links-link">Get a free quot</a>
+            </div>
+            <div class="col__links">
+              <h2 class="col__links-heading">Contact us</h2>
+              <a href="#" class="col__links-link">Sagrada Familia, Herba</a>
+              <a href="#" class="col__links-link">Street Front USA</a>
+              <a href="#" class="col__links-link">brandoxide@gmail.com</a>
+              <a href="#" class="col__links-link">002-568423591</a>
+            </div>
+            <div class="col__links">
+              <h2 class="col__links-heading">Follow us</h2>
+              <div class="col__links--social">
+                <div class="col__links--social-link">
+                  <img src="./svg/facebook.svg" alt="Facebook Link" />
+                </div>
+                <div class="col__links--social-link">
+                  <img src="./svg/twitter.svg" alt="Twitter Link" />
+                </div>
+                <div class="col__links--social-link">
+                  <img src="./svg/instagram.svg" alt="Instagram Link" />
+                </div>
+                <div class="col__links--social-link">
+                  <img src="./svg/linked-in.svg" alt="Linked-in Link" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-separator" />
+        <p class="footer-copyright">
+          Copyright @ <span class="footer-copyright-year">2020</span>
+          <span class="footer-copyright-brand">Brandoxide</span>.all right
+          reserved
+        </p>
+        <img
+          src="./svg/abstract-decore-6.svg"
+          aria-hidden="true"
+          class="decore footer-decore"
+        />
+      </footer>
+    </div>
+
+    <div class="modal invisible">
+      <button class="btn--close-modal">&times;</button>
+
+      <h3 class="modal__emoji">&#x1f973;</h3>
+      <h2 class="modal__heading">Congatulations!</h2>
+      <p class="modal__text">
+        &emsp;Only today, <span class="modal__date"></span>, for the users with
+        the name Alex, we offer 120% discount!
+      </p>
+    </div>
+    <div class="overlay invisible"></div>
+  </body>
+</html>
