@@ -446,8 +446,9 @@ section {
     .success__desc-subheading {
       line-height: 1;
       font-family: 'Open Sans', sans-serif;
-      background-image: url("../../imgs/wooden-texture.png");
+      background-image: url("../imgs/wooden-texture.png");
       background-clip: text;
+      -webkit-background-clip: text;
       color: transparent;
       font-size: 26.8rem;
       font-weight: 700; }
@@ -544,7 +545,7 @@ section {
       right: -113%;
       width: 22rem;
       height: 10rem;
-      background-image: url("../../svg/abstract-line-1.svg");
+      background-image: url("../svg/abstract-line-1.svg");
       background-size: cover;
       background-position: center; }
     .completed-works__card--2 {
@@ -556,7 +557,7 @@ section {
         right: -87%;
         width: 18rem;
         height: 10rem;
-        background-image: url("../../svg/abstract-line-2.svg");
+        background-image: url("../svg/abstract-line-2.svg");
         background-size: cover;
         background-position: center;
         z-index: -10; }
@@ -569,7 +570,7 @@ section {
         right: -93%;
         width: 18rem;
         height: 10rem;
-        background-image: url("../../svg/abstract-line-3.svg");
+        background-image: url("../svg/abstract-line-3.svg");
         background-size: cover;
         background-position: center;
         z-index: -10; }
